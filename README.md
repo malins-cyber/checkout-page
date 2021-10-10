@@ -22,15 +22,6 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [Overview](checkout-page )
-  - [Built With](html,css)
-
-<!-- OVERVIEW -->
-
 ## Overview
 
 ![screenshot](./public/images/desktop-version.png)
