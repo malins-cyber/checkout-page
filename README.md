@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://check-out-page.herokuapp.com/">
+    <a href="https://check-out-page.herokuapp.com/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://https://github.com/malins-cyber/dev-challenges">
+    <a href="https://github.com/malins-cyber/dev-challenges">
       Solution
     </a>
     <span> | </span>
