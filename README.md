@@ -42,7 +42,7 @@ depending on the users screen viewport:
 - The whole design taugh me how to use flexbox and grids together.
 to make the design pop it made it a good challenge to flex off my skills.
 - This design over all taught me to hanace the power of flexbox and css grids.
-- css grids is the https://github.com/malins-cyber/webdev-challanges.git :)
+- css grids is the https://github.com/malins-cyber/dev-challanges.git :)
 
 ### Built With
 - [Html]
