@@ -1,0 +1,426 @@
+@font-face {
+  font-family: 'PoppinsRegular';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Poppins'), local('PoppinsRegular'), url(./PoppinsRegular.css) format('woff');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+}
+
+.container .header {
+  grid-column: 1/4;
+  font-style: normal;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: #4E5150;
+  width: 58%;
+}
+
+
+.container .main-form {
+  display: flex;
+  flex-direction: column;
+  color: #4E5150;
+  height: auto;
+}
+
+.container .infor {
+  text-transform: capitalize;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.container .contact-info {
+  margin-bottom: 1rem;
+}
+
+.container .form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .8rem;
+}
+
+.container .form-control {
+  color: #4E5150;
+  outline: none;
+  padding: 1rem 2rem;
+  border: 1px solid #828282;
+  border-radius: .5rem;
+}
+
+.container label {
+  margin-bottom: .5rem;
+}
+
+
+.container .closed{
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.container .group{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .4rem;
+}
+
+.container .country{
+  background: #ffffff;
+}
+
+
+.container .control{
+  color: #4E5150;
+  outline: none;
+  padding: 1rem 0 1rem 1.6rem;
+  border: 1px solid #828282;
+  border-radius: .5rem;
+}
+
+.container .code{
+  width: 8.8rem;
+}
+
+.container label {
+  margin-bottom: 4px;
+}
+
+.container .checkout-card {
+  width: 19rem;
+  color: #4E5150;
+  background: #f2f2f2;
+  border-radius: .5rem;
+  padding: 1.3rem;
+  height: 27rem;
+  text-transform: capitalize;
+  box-shadow: 0px 1px 10px hsl(233, 11%, 84%);
+}
+
+.checkout-card .card-one{
+  padding-bottom: 2rem;
+}
+
+
+.checkout-card .card-one,
+.card-two {
+  justify-content: space-between;
+  display: flex;
+}
+
+.checkout-card #image-div {
+  width: 7rem;
+}
+
+.checkout-card img {
+  width: 100%;
+  border-radius: .5rem;
+
+}
+
+.check-out .shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #828282;
+  padding: .5rem 0;
+}
+
+.container .quantity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border: 1px solid #828282;
+  padding: .7rem;
+  background: none;
+  font-size: 12px;
+  width: 6rem;
+  border-radius: .5rem;
+}
+
+.container .listings {
+  width: 8.5rem;
+}
+
+
+.container .details {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container .price {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.container #price {
+  margin-right: 5px;
+  color: #F2994A;
+}
+
+.container .shipping, .total{
+  font-weight: bold;
+}
+
+.container .check-out{
+  margin-top: 65px;
+}
+
+.container .form-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.container .form-button:hover {
+  transform: scale(.98);
+  transition: .03s ease;
+}
+
+
+.form-button #submit-btn {
+  padding: 15px 35px;
+  border-radius: 8px;
+  background: #F2994A;
+  border: #F2994A;
+  color: #f2f2f2;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+
+.checkbox-input {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox-input input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-input .checkbox-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  border: 1px solid #828282;
+}
+
+.checkbox-input .checkbox-button:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: rgb(27, 27, 50, 0.8);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 2px;
+  transition: 300ms ease-in-out 0s;
+}
+
+.checkbox-input input[type="checkbox"]:checked~.checkbox-button:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.container .minus,
+.plus {
+  background: #dddddd;
+  padding: 3px;
+  font-size: 10px;
+}
+
+.container .minus:hover,
+.plus {
+  cursor: pointer;
+  /* transition: .03s ease; */
+}
+
+/* icons */
+
+.container .fa-envelope {
+  position: absolute;
+  top: 56%;
+  left:3.5%;
+  font-size: 14px;
+  color: #828282;
+}
+
+.container .fa-phone-alt {
+  position: absolute;
+  top: 56%;
+  left:3%;
+  font-size: 14px;
+  color: #828282;
+}
+
+.container .fa-user-circle {
+  position: absolute;
+  top: 56%;
+  left:3%;
+  font-size: 14px;
+  color: #828282;
+}
+
+.container .fa-home {
+  position: absolute;
+  top: 56%;
+  left:3%;
+  font-size: 16px;
+  color: #828282;
+}
+
+.container .fa-city {
+  position: absolute;
+  top: 56%;
+  left:3%;
+  font-size: 14px;
+  color: #828282;
+}
+
+.container .fa-globe-americas {
+  position: absolute;
+  top: 56%;
+  left: 5%;
+  font-size: 14px;
+  color: #828282;
+}
+
+
+
+.container .fa-briefcase {
+  position: absolute;
+  top: 56%;
+  left:5%;
+  font-size: 14px;
+  color: #828282;
+}
+
+@media(max-width:500px){
+  body{
+    width: 80vw;
+  }
+  .main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    width: 80vw;
+  }
+
+  .main-form{
+    order: 2;
+    margin-top: 2rem;
+    width: 19rem;
+  }
+
+  .checkout-card{
+    order: 1;
+  }
+
+  .closed{
+    width: inherit;
+  }
+}
+
+@media(max-width:768px){
+  .main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0 auto; */
+  }
+
+  .header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .main-form{
+    order: 2;
+    margin-top: 2rem;
+    width: 100vw;
+    width: 19rem;
+  }
+
+  .checkout-card{
+    order: 1;
+  }
+
+  .closed{
+    width: inherit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
